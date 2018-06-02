@@ -14,13 +14,13 @@ public class FirstUser {
         //todo
 //        impl.HelperImpl helper1 = null;
         //todo
-        try {
-            java.lang.reflect.Method method = helper.getClass().getMethod("hidden");
-            System.out.println(method);
-            method.invoke(helper);
-        } catch (Exception ex) {
-            System.out.println("Error: " + ex.getMessage());
-        }
+//        try {
+//            java.lang.reflect.Method method = helper.getClass().getMethod("hidden");
+//            System.out.println(method);
+//            method.invoke(helper);
+//        } catch (Exception ex) {
+//            System.out.println("Error: " + ex.getMessage());
+//        }
     }
 
     public Fibonacci getFibonacci() {

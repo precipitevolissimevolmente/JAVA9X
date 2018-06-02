@@ -1,0 +1,3 @@
+module Rates {
+    exports rates;
+}
