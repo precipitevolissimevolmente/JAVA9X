@@ -1,11 +1,11 @@
 package second;
 
-import user.FirstUser;
+import user.FibonacciProvider;
 
 public class SecondUser {
     public static void main(String[] args) {
-        FirstUser firstUser = new FirstUser();
-        Object obj = firstUser.getFibonacci();
+        FibonacciProvider provider = new FibonacciProvider();
+        Object obj = provider.getFibonacci();
         System.out.println(obj);
 
         //todo

@@ -1,4 +1,8 @@
+JAVA 9
 java -p Modules -m ModuleB/user.FirstUser
+JAVA 8
+java -cp .\ModuleA.jar;.\ModuleB.jar user.FirstUser
+
 exports util to VARU;
 
 requires transitive ModuleA;
