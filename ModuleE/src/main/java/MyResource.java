@@ -13,9 +13,4 @@ public class MyResource implements AutoCloseable {
     public void close() throws Exception {
         System.out.println("cleaning....");
     }
-
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-    }
 }
