@@ -3,9 +3,9 @@ package hello.dto;
 import model.Student;
 
 public class StudentDTO {
-    private String firstName;
-    private String lastName;
-    private String email;
+    public String firstName;
+    public String lastName;
+    public String email;
 
     StudentDTO from(Student student) {
         StudentDTO dto = new StudentDTO();

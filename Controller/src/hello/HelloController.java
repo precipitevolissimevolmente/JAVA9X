@@ -1,6 +1,7 @@
 package hello;
 
 import hello.dto.StudentDTO;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,8 +16,12 @@ public class HelloController {
         return "Greetings from Spring Boot!";
     }
 
-    @RequestMapping("students/")
+    @RequestMapping(value = "/students", method = RequestMethod.GET, produces = "application/json")
     public List<StudentDTO> getAllStudents() {
-        return new ArrayList<>();
+        StudentDTO studentDTO = new StudentDTO();
+        studentDTO.firstName = "First Name";
+        studentDTO.lastName = "Last Name";
+        studentDTO.email = "email";
+        return List.of(studentDTO);
     }
 }

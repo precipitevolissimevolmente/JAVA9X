@@ -1,6 +1,5 @@
 package model;
 
-import java.util.Objects;
 
 public class Student {
     private String firstName;
