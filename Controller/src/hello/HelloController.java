@@ -17,7 +17,6 @@ public class HelloController {
 
     @RequestMapping("students/")
     public List<StudentDTO> getAllStudents() {
-        ArrayList<StudentDTO> allStudents = new ArrayList<>();
-        return allStudents;
+        return new ArrayList<>();
     }
 }
