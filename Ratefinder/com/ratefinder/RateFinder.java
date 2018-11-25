@@ -14,9 +14,9 @@ public class RateFinder {
         ServiceLoader<Vendor> vendors = ServiceLoader.load(Vendor.class);
         System.out.println("Using ServiceLoader");
 
-//        for (Vendor vendor : vendors) {
-//            System.out.println(vendor.getName());
-//        }
+        for (Vendor vendor : vendors) {
+            System.out.println(vendor.getName());
+        }
         System.out.println("Iterating over Vendors:");
 
 //        vendors.stream()
