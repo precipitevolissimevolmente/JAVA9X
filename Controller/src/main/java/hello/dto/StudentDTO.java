@@ -1,5 +1,6 @@
 package hello.dto;
 
+
 import model.Student;
 
 public class StudentDTO {
@@ -10,7 +11,7 @@ public class StudentDTO {
     StudentDTO from(Student student) {
         StudentDTO dto = new StudentDTO();
         dto.firstName = student.getFirstName();
-        dto.lastName = student.getLastName();
+        dto.lastName = student.getLastNameA();
         dto.email = student.getEmail();
 
         return dto;
