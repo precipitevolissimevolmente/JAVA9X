@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class A_Var {
 
@@ -7,9 +6,9 @@ public class A_Var {
         //only for local variables!!!
 
         //try Control + q on var name
-        //http://openjdk.java.net/projects/amber/LVTIstyle.html Guidelines for var
-        var a = "Some data of type: ";
-        System.out.println(a + a.getClass().getName());
+        //http://openjdk.java.net/projects/amber/LVTIstyle.html Guidelines for var! like Optional :)
+        var var = "Some data of type: ";
+        System.out.println(var + var.getClass().getName());
 
         var b = myMethod();
         ArrayList<String> strings = new ArrayList<>();

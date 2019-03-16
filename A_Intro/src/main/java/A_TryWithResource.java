@@ -4,7 +4,8 @@ public class A_TryWithResource {
     }
 
     private static void tryWithResource() {
-        try (MyResource myResource = new MyResource()) {
+        MyResource myResource = new MyResource();
+        try (myResource) {
             System.out.println("do something");
         }
     }
